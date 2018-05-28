@@ -1,0 +1,22 @@
+<div
+	 class="cards-wrap"
+	 angular-grid="vm.shots"
+	 ag-grid-width="300"
+	 ag-gutter-size="12"
+	 ag-id="shots"
+	 ag-scroll-container="'#content-scroller'"
+	 ag-infinite-scroll="vm.loadMoreShots()"
+	 itemscope itemtype="http://schema.org/Periodical">
+
+	  <div class="card" ng-repeat="(key, shot) in vm.shots track by key" aria-label="Foto {{shot.name}}">
+		<div class="img" style="background-image: url( {{shot.src}} );"  ng-click="showCardDes(shot)"></div> 
+		<div class="inside">
+			<meta datetime="{{ shot.modified | date : 'y-MM-dd'}}" itemprop="datePublished">
+			<a href ng-click='searchTag(tag)' ng-repeat="tag in shot.tags"  itemprop="name"> #{{ tag }} </a>
+		</div>
+	  </div>
+</div>
+
+<div class="loading-more-indicator" ng-show="vm.loadingMore">
+  <md-progress-circular md-mode="indeterminate" md-diameter="64" class="progress-swatch"></md-progress-circular>
+</div>

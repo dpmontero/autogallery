@@ -1,0 +1,12 @@
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+<ShortName>mi-galeria-fotos</ShortName>
+<Description>
+Mi galería de fotos.
+</Description>
+<Tags>
+</Tags>
+<Url type="text/html" template="http://migaleriadefotos.com/?q={searchTerms}"/>
+<Image height="16" width="16" type="image/x-icon">http://www.migaleriadefotos.com/favicon.ico</Image>
+<Query role="example" searchTerms="marianico"/>
+<AdultContent>TRUE</AdultContent>
+</OpenSearchDescription>

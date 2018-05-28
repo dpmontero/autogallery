@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Mi galería de fotos</title>
+		<link rel="shortcut icon" href="favicon.ico">
+		<meta name="robots" content="all">
+		
+        <!-- Diego Peñalver Montero - dpmontero.es -->
+
+		<meta name="apple-mobile-web-app-capable" content="yes"> 
+		 
+		 <meta name="mobile-web-app-capable" content="yes">
+		<meta name="theme-color" content="#9C27B0">
+		<link rel="icon" sizes="192x192" href="logo192x192.png">
+		 
+		 <link rel="search" type="application/opensearchdescription+xml" href="//www.migaleria.com/opensearchdescription.xml" title="" />
+		<meta name="description" content="" /><meta
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="keywords" content="">
+		
+		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.1/angular-material.min.css">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+
+		
+		<meta property="og:site_name" content=""/>
+		<meta property="twitter:site" content="@" />
+		<meta property="twitter:creator" content="@" />
+		<meta property="twitter:url" content="https://twitter.com/" />
+		<meta property="twitter:title" content="" />
+		<meta name="origen" content="" />
+		<meta name="author" content="" />
+		<meta name="subject" content="" />
+		
+		<meta property="og:type" content="website" />
+		<meta content="" property='og:title'>
+		<meta content='' property='og:description'>
+		<base href="/">
+	</head>
+<body>
+
+
+  
+	
+
+<div ng-controller="MainCtrl as vm" ng-cloak="" ng-app="app" layout="column" layout-fill>
+  <md-content id="content-scroller">
+  
+		  <md-toolbar ng-if='!isRouteLoading'>
+			<div class='md-toolbar-tools' id="top" >
+					<h2><span style='text-transform: capitalize;'><a ng-href="/" ng-click='vm.loadMoreShots()'>Mi Galería de fotos</a></span></h2>
+				  <span flex></span>
+				  <span style='text-align: center;'>
+						<a href ng-click="searchTag('')">{{ current_tag }}</a>
+				  </span> 
+			</div>
+		</md-toolbar>
+  
+  		<div class="ads" style="text-align:center;">
+			<script type="application/javascript" src="ads.php?v=1"></script>
+		</div>
+		
+		<div ng-view></div>
+		
+  </md-content>		
+
+
+	 <footer>
+			<center> Mi galería de fotos
+				· <a href="http://dpmontero.es">Diego Peñalver Montero</a> 
+			</center>
+	</footer>
+
+</div>
+
+
+
+	
+
+<!-- Angular Material requires Angular.js Libraries -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular-route.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
+    
+<!-- Angular Material Library -->
+  <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.1/angular-material.min.js"></script>
+  <script src="scripts/assets-cache.js"></script>
+  <script src="scripts/angular-grid.js"></script>
+  
+ <script src="scripts/app.js"></script>
+	
+	
+	<!-- Ads -->
+<script type="text/javascript">
+	var _prvar=_prvar||new Object();
+	(function(pa,s){if(document.getElementById('pr47a50756'))return false;
+	pa=document.createElement('script');pa.type='text/javascript';pa.async=true;pa.id='pr47a50756';pa.src='//prscripts.com/pub.js';
+	s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(pa,s);})();
+</script>
+
+	
+<script async src='//platform.twitter.com/widgets.js' charset='utf-8'></script>
+
+</body>
+</html>
