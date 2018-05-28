@@ -1,5 +1,7 @@
 Crea una galería de imágenes con solo poner las carpetas de fotos.
 
+<img src="https://github.com/dpmontero/autogallery/blob/master/presentacion-autogallery.gif">
+
 
 <h1>Cómo funciona</h1>
 Las carpetas con los nombres de la temática fotográfica las guardamos dentro de la carpeta del proyecto "fotos".
