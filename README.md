@@ -10,5 +10,5 @@ Se adapta a todo tipo de pantallas.
 
 
 <h1>Soporte</h1>
-Mejoras y errores en https://github.com/dpmontero/autogallery/issues/new
+Mejoras y errores en <a href="https://github.com/dpmontero/autogallery/issues/new">github</a>
 
